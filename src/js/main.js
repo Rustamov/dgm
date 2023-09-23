@@ -1,3 +1,3 @@
-const sum = require("./module/sum.js");
+import { Fancybox } from "@fancyapps/ui";
 
-console.log("Sum = " + sum(9, 1888))
+console.log("Hello m...")

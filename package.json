@@ -48,5 +48,13 @@
     "sass": "^1.68.0",
     "webpack": "^5.88.2",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "normalize-scss": "^7.0.1",
+    "@fancyapps/ui": "^5.0.22",
+    "jquery": "^3.7.1",
+    "jquery-mask-plugin": "^1.14.16",
+    "normalize.css": "^8.0.1",
+    "swiper": "^10.3.0"
   }
 }
