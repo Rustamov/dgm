@@ -1,0 +1,15 @@
+extends layout/app
+
+block page
+  include chunk/header
+
+  h1.title Main page 
+  
+  img.pic(src="img/banner.webp", alt="good", width="600")
+
+  ul.news 
+    li "First new 1"
+    li "Second new 2"
+    li "Third new 3"
+  
+  include chunk/footer
