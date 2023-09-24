@@ -1,0 +1,68 @@
+section.contact
+  .container.contact__container
+    .contact__tag Отвечаем
+
+
+    .contact__row
+      .contact__col-inf
+        h2.contact__title Наши контакты
+
+        .contact__links
+          .contact__links-item
+            a.contact__link(href="tel:+84562334323") + 8 456 233 43 23
+
+          .contact__links-item
+            a.contact__link(href="mailto:contacts@dgm.com") contacts@dgm.com
+
+      .contact__col-form
+        .contact__form
+          .contact__form-title Отавьте заявку
+
+          .contact__form-main
+            form.js-validate(action="#" autocomplete="off")
+              // add class "is-form-sent" after sent form
+              .contact-form.form-main                   
+                .contact-form.fields
+                  .contact-form.fields-item
+                    label.input-text
+                      span.input-text__label 
+                        | ФИО 
+                        i.imp-sign *
+                      input.input-text__field(type="text" name="Name" required="" placeholder="Введите имя")
+
+                    .contact-form.fields-item
+                      label.input-text
+                        span.input-text__label 
+                          | Телефон 
+                          i.imp-sign *
+                        input.input-text__field(type="tel" name="tel" required="" data-parsley-ru-phone placeholder="8 456 233 43 23")
+                    
+                    label.input-text
+                      span.input-text__label 
+                        | E-mail * 
+                        i.imp-sign *
+                      input.input-text__field(type="email" name="Name" required="" placeholder="contacts@dgm.com")
+
+                    .contact-form.fields-item
+                      label.input-text
+                        span.input-text__label Ваше сообщение
+                        textarea.input-text__field(name="Message" rows="3" placeholder="Введите сообщение")
+                
+                
+                .contact-form.bottom
+                  .contact-form.bottom-policy Отправив заявку Вы соглашаетесь с политикой конфиденциальности
+
+                  .contact-form.bottom-submit
+                    button.btn.btn--theme-grey.contact-form__send-btn(type="submit") Отправить 
+                    
+
+              .contact-form.succeed
+                .contact-form.succeed-icon
+                  img(src="/img/round-check-mark.svg")
+                
+                .contact-form.succeed-title  Заявка упешно отправлена
+
+                .contact-form.succeed-button-wrap
+                    button.btn.btn--theme-def.contact-form.succeed-btn Сотрудничать 
+
+                

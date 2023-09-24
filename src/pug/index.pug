@@ -2,14 +2,15 @@ extends layout/app
 
 block page
   include chunk/header
-
-  h1.title Main page 
   
-  img.pic(src="img/banner.webp", alt="good", width="600")
+  include chunk/banner
+  include chunk/features
+  .sections-wrap-bg
+    include chunk/placement
+    include chunk/how
+  include chunk/faq
+  include chunk/contact
 
-  ul.news 
-    li "First new 1"
-    li "Second new 2"
-    li "Third new 3"
+
   
   include chunk/footer

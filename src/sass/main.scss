@@ -1,5 +1,7 @@
 $base-font-family: "Inter", Arial, Helvetica, sans-serif;;
-$base-font-size: 22px;
+$base-font-size: 16px;
+
+$color-grey: #A1A1A1;
 
 @mixin ph {
   @media (max-width: 700px) {
@@ -16,15 +18,18 @@ body {
   font-family: $base-font-family;
   line-height: 1.5;
 
-  background:  url("../img/mobile-cod.webp");
-  
-  @include ph {
-    color: #fff;
-    background: #000;
-  }
+  color: #fff;
+  background:  #000;
+}
+
+.container {
+  max-width: 1630px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 
 // sass-glob;
-@import "././node_modules/normalize-scss/sass/_normalize.scss";
+// @import "././node_modules/normalize-scss/sass/_normalize.scss";
+
 @import "block/*.scss";

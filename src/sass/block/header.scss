@@ -1,0 +1,62 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 32px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    &-link {
+      max-width: 90px;
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+    &-img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
+  &__nav {
+    &-list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      margin: 0 -21px;
+    }
+
+    &-item {
+      padding: 0 21px;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: $color-grey;
+      white-space: nowrap;
+      font-size: 18px; 
+      transition: color 0.3s;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  &__action {
+    &-btn {
+     
+    }
+  }
+
+  &__logo {}
+
+}

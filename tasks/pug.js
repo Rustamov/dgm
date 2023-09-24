@@ -6,7 +6,7 @@ import app from "../config/app.js";
 //plugins
 import pugs from "gulp-pug";
 import beautify from "gulp-jsbeautifier";
-import webpHtml from "gulp-webp-html";
+import webpHtml from "gulp-webp-html-nosvg";
 
 export default () =>{
   return gulp.src(path.pug.src)
