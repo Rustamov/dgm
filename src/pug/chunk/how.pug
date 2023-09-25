@@ -1,6 +1,7 @@
 section.how
   .container.how__container
-    .how__tag Как начать майнить
+    .how__tag
+      span.how__tag-text Как начать майнить
 
     h2.how__title Выполни несколько шагов и начни майнить с нами
 
@@ -13,10 +14,10 @@ section.how
 
               .how__item-bottom
                 p.how__item-title Регистрация
-                p.how__item-text Создайте свою учетную запись на нашем сайте
+                p.how__item-text.how__item-text--first Создайте свою учетную запись на нашем сайте
 
             .how__item-img-wrap
-              img.how__item-img(src="/img/how-1.webp")
+              img.how__item-img.how__item-img--first(src="/img/how-1.png")
 
 
         .how__boxes-col.how__boxes-col--half
@@ -28,10 +29,10 @@ section.how
 
                   .how__item-bottom
                     p.how__item-title Выберите майнер
-                    p.how__item-text Выберите подходящий для вас ASIC-майнер и оплатите удобным способом
+                    p.how__item-text.how__item-text--second Выберите подходящий для вас ASIC-майнер и оплатите удобным способом
 
                 .how__item-img-wrap
-                  img.how__item-img(src="/img/how-2.webp")
+                  img.how__item-img.how__item-img--second(src="/img/how-2.png")
 
             .how__boxes-col.how__boxes-col
               .how__item
@@ -40,7 +41,10 @@ section.how
 
                   .how__item-bottom
                     p.how__item-title Все готово
-                    p.how__item-text ASIC уже в отеле и вклечен, Вы моментально начинаете зарабатывать
+                    p.how__item-text.how__item-text--third 
+                      | ASIC уже в отеле и вклечен, 
+                      span.br-xl
+                      | Вы моментально начинаете зарабатывать
 
                 .how__item-img-wrap
-                  img.how__item-img(src="/img/how-3.webp")
+                  img.how__item-img.how__item-img--third(src="/img/how-3.png")

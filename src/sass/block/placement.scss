@@ -1,0 +1,135 @@
+.place {
+  margin: 0;
+  padding: 60px 0;
+  color: $color-text-black;
+  background: #fff;
+  
+  &__container {
+    
+  }
+
+  &__tag {
+    margin: 0 0 2.5em;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    
+    &-text {
+      display: inline-block;
+      margin: 0;
+      background: $gradient-violet;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__title {
+    margin: 0 0 30px;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: calc(46/38);
+  }
+
+  &__boxes {
+    // width: 49%;
+
+    &-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -24px -12px 0;
+    }
+
+    &-col {
+      padding: 24px 12px 0;
+      width: 100%;
+
+      &--half {
+        width: 50%;
+      }
+
+    }
+  }
+
+  &__items {
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 22px 24px;
+    color: $color-text-dark-grey;
+    background: #f9f9f9;
+    border-radius: 24px;
+    
+    &--single-title {
+      justify-content: center;
+      color: $color-text-black;
+      background: none;
+    }
+
+    &--align-right {
+      text-align: right;
+    }
+
+    &-title {
+      margin: 0 0 72px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 42px;
+      line-height: calc(51/42);
+
+      &--big {
+        margin: 0;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: calc(61/50);
+      }
+    }
+    
+    &-text {
+      margin: 0;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: calc(32/24);
+      color: $color-grey;
+
+    }
+  }
+
+  &__img-box {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border: 5px solid rgba(240, 240, 240, 0.51);
+    border-radius: 48px;
+
+    &-pic {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+      width: auto;
+
+      &--align-left {
+        right: auto;
+        left: 0;
+      }
+
+    }
+  }
+  
+}

@@ -1,0 +1,168 @@
+.action {
+  padding: 115px 0 0;
+  
+  background: $color-black url(../img/banner.webp) 50% 0 no-repeat;
+  background-size: cover;
+  
+  width: 100%;
+  height: 100vh;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    position: relative;
+    z-index: 1;
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 0 0 20px;
+
+    &-inner {
+      width: 100%;
+    }
+    
+    &-container {
+      
+    }
+
+    &-box {
+      max-width: 1030px;
+    }
+    
+    &-title {
+      margin: 0 0 16px;
+      font-size: 58px;
+      line-height: 1.2;
+      font-weight: 500;
+
+      &-highlighted {
+        color: $color-green;
+      }
+    }
+
+    &-text {
+      max-width: 800px;
+      margin: 0 0 2.4em;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+
+    &-btn {
+      &-wrap {
+
+      }
+
+
+    }
+
+  }
+
+
+  &__f {
+    padding: 60px 0;
+    background: $color-black;
+    border-radius: 56px 56px 0 0;
+
+    &-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-box {
+
+    }    
+    
+    &-text-box {
+      
+    }
+
+    &-tag {
+      margin: 0 0 2.5em;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.5;
+
+      &-text {
+        display: inline-block;
+        margin: 0;
+        background: $gradient-green;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    &-title {
+      margin: 0 0 16px;
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: calc(46/38);
+    }
+
+    &-text {
+      max-width: 460px;
+      margin: 0;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: calc(24/16);
+      color: $color-grey
+    }
+
+    &-boxes {
+      width: 49%;
+
+      &-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -24px -12px 0;
+      }
+
+      &-col {
+        padding: 24px 12px 0;
+        width: 100%;
+
+        &--half {
+          width: 50%;
+        }
+
+      }
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      background: $color-black-2;
+      padding: 22px 24px;
+      border: 1px solid $color-grey-2;
+      border-radius: 24px;
+
+      &-title {
+        margin: 0 0 28px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 42px;
+        line-height: calc(51/42);
+      }
+      
+      &-text {
+        margin: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: calc(32/24);
+        color: $color-grey;
+  
+      }
+    }
+
+  }
+
+
+  
+}

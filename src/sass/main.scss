@@ -1,31 +1,70 @@
 $base-font-family: "Inter", Arial, Helvetica, sans-serif;;
-$base-font-size: 16px;
+$base-font-size: 20px;
+$base-font-size-lg: 16px;
+$base-font-size-md: 14px;
 
-$color-grey: #A1A1A1;
+$color-black: #0e0e0e;
+$color-black-2: #161616;
 
-@mixin ph {
-  @media (max-width: 700px) {
+$color-grey: #a1a1a1;
+$color-grey-2: #6b6b6b;
+$color-green: #91e764;
+
+$color-text-black: #0c0c0d;
+$color-text-dark-grey: #404040;
+
+$gradient-green: linear-gradient(91.21deg, #CFE351 -12.06%, #7CE96B 33.07%, #5AEAC7 128.63%);
+$gradient-violet: linear-gradient(91.21deg, #285EEA -12.06%, #EA5A5A 125.38%);
+$gradient-violet-2: linear-gradient(91.05deg, #BD34DF 12.15%, #3F5AE3 143.32%), linear-gradient(91.54deg, #33D4F8 -9.13%, #9859EA 112.17%);;
+
+@mixin media-lg {
+  @media (max-width: 1200px) {
     @content;
   }
 }
+@mixin media-md {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin media-sm {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin media-xs {
+  @media (max-width: 540px) {
+    @content;
+  }
+}
+
 
 * {
   box-sizing: border-box;
 }
 
 body {
+  margin: 0;
   font-size: $base-font-size;
   font-family: $base-font-family;
-  line-height: 1.5;
+  line-height: 1.4;
 
   color: #fff;
-  background:  #000;
+  background: $color-black;
 }
 
 .container {
   max-width: 1630px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.sections-wrap-bg {
+  padding: 0;
+  background: #fff;
+  color: $color-text-black;
+  border-radius: 56px;
+  overflow: hidden;
 }
 
 
