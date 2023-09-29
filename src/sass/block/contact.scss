@@ -1,3 +1,13 @@
+.contact-form {
+
+}
+
+
+
+
+
+
+
 .contact {
 
   &__row {
@@ -61,8 +71,6 @@
 
   &__form {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     height: 100%;
     background: $gradient-green;
     padding: 48px 50px;
@@ -70,15 +78,57 @@
     border-radius: 24px;
     color: $color-black;
 
+    &-col-title {
+      width: 260px;
+      margin-right: 15px;
+    }
+    &-col-main {
+      // width: 260px;
+      flex-grow: 1;
+
+    }
+
     &-title {
       display: block;
       margin: 0 0 1em;
-      max-width: 300px;
       font-style: normal;
       font-weight: 700;
       font-size: 48px;
       line-height: calc(54/48);
     }
+
+    &-fields {
+      margin: 0 0 24px;
+
+      &-item {
+
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+      }
+
+    }
+
+    &-bottom {
+
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      &-policy {
+        max-width: 250px;
+        margin-right: 24px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: -0.004em;
+        opacity: 0.45;
+      }
+    }
+
+
+
   }
 
   
